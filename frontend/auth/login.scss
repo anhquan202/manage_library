@@ -1,0 +1,50 @@
+@import '../_variables';  // Import biến màu
+@import '../base';  
+body{
+  background: $overlay;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.msg-err {
+  color: $text-danger;
+}
+.login-container{
+  width: 400px;
+  padding: 12px 8px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: flex;
+  flex-direction: column;
+  background: $bg-white;
+
+  
+  h2{
+    text-align: center;
+    margin: 16px 0;
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .input-group{
+    padding: 16px 12px;
+    
+    input{
+      width: 100%;
+      border: none; 
+      outline: none;
+      box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1);
+      padding: 16px 12px;
+      font-size: 14px;
+    }
+  }
+  .btn-login{
+    background: $btn-submit;
+    width: 100%;
+    padding: 8px;
+    border-radius: 20px;
+    border: none;
+    color: $text-white;
+  }
+  
+}
