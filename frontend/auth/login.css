@@ -33,7 +33,7 @@ body {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   display: flex;
   flex-direction: column;
-  background: white;
+  background: #fff;
 }
 .login-container h2 {
   text-align: center;
@@ -58,5 +58,5 @@ body {
   padding: 8px;
   border-radius: 20px;
   border: none;
-  color: white;
+  color: #fff;
 }/*# sourceMappingURL=login.css.map */
