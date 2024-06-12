@@ -1,0 +1,44 @@
+.library-menu {
+  width: 15%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  box-shadow: 25px -2px 24px -30px rgba(0, 0, 0, 0.45);
+}
+.library-menu .title {
+  padding: 16px 8px;
+  font-size: 14px;
+}
+.library-menu #menu-list {
+  padding: 0 12px;
+}
+.library-menu #menu-list .children {
+  padding: 12px 0;
+  border-radius: 10px;
+}
+.library-menu #menu-list .children a {
+  text-decoration: none;
+  margin-left: 16px;
+}
+.library-menu #menu-list .children .chidren-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.library-menu #menu-list .children .children-books {
+  display: none;
+  margin-top: 8px;
+  list-style-type: none;
+}
+.library-menu #menu-list .children .children-books li {
+  padding: 12px 0;
+  border-radius: 10px;
+}
+.library-menu #menu-list .children.abc .children-books {
+  display: block;
+}
+.library-menu #menu-list .children:hover {
+  background: #ccc;
+  cursor: pointer;
+}/*# sourceMappingURL=aside.css.map */

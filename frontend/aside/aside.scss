@@ -1,0 +1,47 @@
+@import '../variables';
+.library-menu{
+  width: 15%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: $bg-white;
+  box-shadow: 25px -2px 24px -30px rgba(0, 0, 0, 0.45);
+  .title{
+    padding: 16px 8px;
+    font-size: 14px;
+  }
+  #menu-list{
+    padding: 0 12px;
+    .children{
+      padding: 12px 0;
+      border-radius: 10px;
+      a{
+        text-decoration: none;
+        margin-left: 16px;
+      }
+      .chidren-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .children-books{
+        display: none;
+        margin-top: 8px;
+        list-style-type: none;
+        li{
+          padding: 12px 0;
+          border-radius: 10px;
+        }
+      }
+      &.abc{
+        .children-books{
+          display: block;
+        }
+      }
+    }
+    .children:hover{
+      background: $grey;
+      cursor: pointer;
+    }
+  }
+}
