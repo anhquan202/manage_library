@@ -13,35 +13,44 @@
   #menu-list{
     padding: 0 12px;
     .children{
-      padding: 12px 0;
+      padding: 12px 8px;
       border-radius: 10px;
+      &:hover{
+        cursor: pointer;
+        background: $grey;
+      }
       a{
         text-decoration: none;
-        margin-left: 16px;
+        width: 100%;
+        display: inline-block;
       }
       .chidren-header{
+        cursor: pointer;
         display: flex;
         justify-content: space-between;
         align-items: center;
       }
-      .children-books{
-        display: none;
-        margin-top: 8px;
-        list-style-type: none;
-        li{
-          padding: 12px 0;
-          border-radius: 10px;
-        }
-      }
-      &.abc{
+      &.active{
+        background: $grey;
         .children-books{
-          display: block;
+          max-height: 200px;
+          margin-top: 12px;
         }
       }
-    }
-    .children:hover{
-      background: $grey;
-      cursor: pointer;
+      .children-books {
+        max-height: 0;
+        overflow: hidden;
+        list-style-type: none;
+        padding: 0;
+        transition: max-height 0.3s ease-in-out;
+        li {
+          padding: 12px 8px;
+          border-radius: 10px;
+          &:hover{
+            background: $hover-secondary-bg-color;
+          }
+        }
+      }
     }
   }
 }

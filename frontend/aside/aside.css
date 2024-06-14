@@ -14,31 +14,42 @@
   padding: 0 12px;
 }
 .library-menu #menu-list .children {
-  padding: 12px 0;
+  padding: 12px 8px;
   border-radius: 10px;
+}
+.library-menu #menu-list .children:hover {
+  cursor: pointer;
+  background: #ccc;
 }
 .library-menu #menu-list .children a {
   text-decoration: none;
-  margin-left: 16px;
+  width: 100%;
+  display: inline-block;
 }
 .library-menu #menu-list .children .chidren-header {
+  cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+.library-menu #menu-list .children.active {
+  background: #ccc;
+}
+.library-menu #menu-list .children.active .children-books {
+  max-height: 200px;
+  margin-top: 12px;
+}
 .library-menu #menu-list .children .children-books {
-  display: none;
-  margin-top: 8px;
+  max-height: 0;
+  overflow: hidden;
   list-style-type: none;
+  padding: 0;
+  transition: max-height 0.3s ease-in-out;
 }
 .library-menu #menu-list .children .children-books li {
-  padding: 12px 0;
+  padding: 12px 8px;
   border-radius: 10px;
 }
-.library-menu #menu-list .children.abc .children-books {
-  display: block;
-}
-.library-menu #menu-list .children:hover {
-  background: #ccc;
-  cursor: pointer;
+.library-menu #menu-list .children .children-books li:hover {
+  background: #ddd;
 }/*# sourceMappingURL=aside.css.map */
