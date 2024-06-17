@@ -1,0 +1,44 @@
+.btn {
+  padding: 12px 8px;
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+}
+
+.table-wrapper {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.table-wrapper .list-member {
+  width: 100%;
+  border-spacing: 0;
+}
+.table-wrapper .list-member thead {
+  height: 50px;
+  background: hsl(0, 0%, 45%);
+  color: #fff;
+}
+.table-wrapper .list-member thead th:nth-last-child(1) {
+  width: 180px;
+}
+.table-wrapper .list-member tbody tr:nth-child(even) {
+  background-color: #b3b3b3;
+}
+.table-wrapper .list-member tbody tr td {
+  padding: 12px 0;
+}
+.table-wrapper .list-member tbody tr td:nth-last-child(1) {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.table-wrapper .list-member tbody tr td:nth-last-child(1) .btn {
+  width: 45%;
+}
+.table-wrapper .list-member tbody tr td:nth-last-child(1) .btn.btn-edit {
+  background: rgb(80, 184, 80);
+}
+.table-wrapper .list-member tbody tr td:nth-last-child(1) .btn.btn-del {
+  background: red;
+}/*# sourceMappingURL=member.css.map */

@@ -1,0 +1,48 @@
+@import '../variables';
+.btn{
+  padding: 12px 8px;
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+}
+.table-wrapper{
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  .list-member{
+    width: 100%;
+    border-spacing: 0;
+    thead{
+      height: 50px;
+      background: $bg-head-table;
+      color: $text-white;
+      th:nth-last-child(1){
+        width: 180px;
+      }
+    }
+    tbody{
+      tr:nth-child(even){
+        background-color: $bg-odd-val-table;
+      }
+      tr{
+        td{
+          padding: 12px 0;
+        }
+        td:nth-last-child(1){
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          .btn{
+            width: 45%;
+            &.btn-edit{
+              background: $btn-create;
+            }
+            &.btn-del{
+              background: $btn-del;
+            }
+          }
+        }
+      }
+    }
+  }
+}
