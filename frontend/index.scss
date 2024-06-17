@@ -1,0 +1,12 @@
+@import './header/header';
+@import './aside/aside';
+@import './member/member';
+.content{
+  padding-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  #main-content{
+    width: 85%;
+    padding: 16px 32px;
+  }
+}

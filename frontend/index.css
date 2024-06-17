@@ -1,0 +1,188 @@
+.header {
+  width: 100%;
+  height: 80px;
+  padding: 16px 24px;
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  box-shadow: 0px 15px 10px -15px #ccc;
+}
+.header .logo {
+  width: 25%;
+}
+.header .logo a {
+  text-decoration: none;
+  width: inherit;
+}
+.header .logo a img {
+  width: 50px;
+  height: 50px;
+}
+.header .user-info {
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+.header .user-info .dropdown {
+  width: 30%;
+  margin-left: auto;
+  border: 1px solid #ccc;
+  border: none;
+  border-radius: 5px;
+  position: relative;
+}
+.header .user-info .dropdown .dropdown-group {
+  display: flex;
+  align-items: center;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.header .user-info .dropdown .dropdown-group img {
+  width: 30px;
+  height: 30px;
+  margin-left: 12px;
+}
+.header .user-info .dropdown .dropdown-group .dropdown-button {
+  width: 100%;
+  padding: 16px 12px;
+  border: none;
+  border-radius: 5px;
+  background: none;
+  cursor: pointer;
+}
+.header .user-info .dropdown .dropdown-content {
+  border-radius: 5px;
+  display: none;
+  margin-top: 16px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  position: absolute;
+}
+.header .user-info .dropdown .dropdown-content span {
+  padding: 12px 6px;
+}
+.header .user-info .dropdown .dropdown-content a {
+  text-decoration: none;
+  padding: 12px 6px;
+  color: #000;
+}
+.header .user-info .dropdown .dropdown-content a:hover {
+  background: #ccc;
+}
+.header .user-info .dropdown .dropdown-content.isOpen {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.library-menu {
+  width: 15%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  box-shadow: 25px -2px 24px -30px rgba(0, 0, 0, 0.45);
+}
+.library-menu .title {
+  padding: 16px 8px;
+  font-size: 14px;
+}
+.library-menu #menu-list {
+  padding: 0 12px;
+}
+.library-menu #menu-list .children {
+  padding: 12px 8px;
+  border-radius: 10px;
+}
+.library-menu #menu-list .children:hover {
+  cursor: pointer;
+  background: #ccc;
+}
+.library-menu #menu-list .children a {
+  text-decoration: none;
+  width: 100%;
+  display: inline-block;
+}
+.library-menu #menu-list .children .chidren-header {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.library-menu #menu-list .children.active {
+  background: #ccc;
+}
+.library-menu #menu-list .children.active .children-books {
+  max-height: 200px;
+  margin-top: 12px;
+}
+.library-menu #menu-list .children .children-books {
+  max-height: 0;
+  overflow: hidden;
+  list-style-type: none;
+  padding: 0;
+  transition: max-height 0.3s ease-in-out;
+}
+.library-menu #menu-list .children .children-books li {
+  padding: 12px 8px;
+  border-radius: 10px;
+}
+.library-menu #menu-list .children .children-books li:hover {
+  background: #ddd;
+}
+
+.btn {
+  padding: 12px 8px;
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+}
+
+.table-wrapper {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.table-wrapper .list-member {
+  width: 100%;
+  border-spacing: 0;
+}
+.table-wrapper .list-member thead {
+  height: 50px;
+  background: hsl(0, 0%, 45%);
+  color: #fff;
+}
+.table-wrapper .list-member thead th:nth-last-child(1) {
+  width: 180px;
+}
+.table-wrapper .list-member tbody tr:nth-child(even) {
+  background-color: #b3b3b3;
+}
+.table-wrapper .list-member tbody tr td {
+  padding: 12px 0;
+}
+.table-wrapper .list-member tbody tr td:nth-last-child(1) {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.table-wrapper .list-member tbody tr td:nth-last-child(1) .btn {
+  width: 45%;
+}
+.table-wrapper .list-member tbody tr td:nth-last-child(1) .btn .btn-edit {
+  background: rgb(80, 184, 80);
+}
+.table-wrapper .list-member tbody tr td:nth-last-child(1) .btn .btn-del {
+  background: red;
+}
+
+.content {
+  padding-top: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+.content #main-content {
+  width: 85%;
+  padding: 16px 32px;
+}/*# sourceMappingURL=index.css.map */
