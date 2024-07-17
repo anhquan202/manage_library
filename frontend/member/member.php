@@ -1,5 +1,4 @@
 <?php
-// $list_member = include __DIR__ . '../../backend';
 $file_to_include = __DIR__ . '/../../backend/member/get_members.php';
 $real_path = realpath($file_to_include);
 
@@ -9,6 +8,7 @@ if ($real_path && file_exists($real_path)) {
   echo 'File not found: ' . $real_path . '<br>';
 }
 ?>
+
 <button class="btn btn-create" onclick="loadContent('member/crud/create/create')">
   Create new account
 </button>

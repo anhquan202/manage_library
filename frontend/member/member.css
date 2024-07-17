@@ -6,6 +6,10 @@
   width: 16%;
   margin-bottom: 16px;
 }
+.btn a {
+  text-decoration: none;
+  color: #fff;
+}
 
 .table-wrapper {
   width: 100%;
