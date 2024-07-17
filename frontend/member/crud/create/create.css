@@ -1,0 +1,26 @@
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.container .form-group {
+  margin-bottom: 15px;
+}
+.container .form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+.container .form-group input, .container .form-group select {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+.container .form-group button {
+  padding: 10px 15px;
+  background-color: rgb(75, 75, 250);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}/*# sourceMappingURL=create.css.map */
