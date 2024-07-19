@@ -20,7 +20,7 @@ try {
 
     if ($check_email_stmt->num_rows > 0) {
       $_SESSION['message'] = 'Email already exists. Please use a different email.';
-      header("Location: /manage_library/frontend/index.php?page=member/crud/create/create");
+      header("Location: /manage_library/frontend/index.php?page=member/create/create");
       exit();
     } else {
       $stmt = $conn->prepare("INSERT INTO users (user_name, full_name, email, phone_number, address, password, user_type) VALUES (?, ?, ?, ?, ?, ?, ?)");
@@ -32,13 +32,13 @@ try {
         exit();
       } else {
         $_SESSION['message'] = 'There was an error submitting the form';
-        header("Location: /manage_library/frontend/index.php?page=member/crud/create/create");
+        header("Location: /manage_library/frontend/index.php?page=member/create/create");
         exit();
       }
     }
   }
 } catch (\Throwable $th) {
   $_SESSION['message'] = "Error: " . $th->getMessage();
-  header("Location: /manage_library/frontend/index.php?page=member/crud/create/create");
+  header("Location: /manage_library/frontend/index.php?page=member/create/create");
   exit();
 }
