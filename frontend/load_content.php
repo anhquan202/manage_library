@@ -9,7 +9,8 @@ if (isset($_GET['page'])) {
         // 'authors/authors',
         // 'authors/create_author'
         'member/member',
-        'member/crud/create/create',
+        'member/create/create',
+        'member/update/update'
     ];
     
     if (in_array($page, $allowed_pages)) {
