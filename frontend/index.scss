@@ -1,6 +1,9 @@
 @import './header/header';
 @import './aside/aside';
 @import './member/member';
+@import './member/create/create';
+// @import './member/update/update';
+
 .content{
   padding-top: 80px;
   display: flex;
