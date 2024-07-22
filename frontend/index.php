@@ -62,3 +62,7 @@
     });
   });
 </script>
+<!-- Notify deleting a member -->
+<script src="./member/delete.js"></script>
+<!-- Open menus -->
+<script src="./header/openMenu.js"></script>
