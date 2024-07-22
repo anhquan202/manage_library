@@ -9,7 +9,7 @@ if ($real_path && file_exists($real_path)) {
 }
 ?>
 
-<button class="btn btn-create" onclick="loadContent('member/crud/create/create')">
+<button class="btn btn-create" onclick="loadContent('member/create/create')">
   Create new account
 </button>
 <div class="table-wrapper">
@@ -39,8 +39,8 @@ if ($real_path && file_exists($real_path)) {
           <td><?php echo htmlspecialchars($member['user_type']); ?></td>
           <td><?php echo htmlspecialchars($member['registration_date']); ?></td>
           <td>
-            <button class="btn btn-edit"><a href="#">Edit</a></button>
-            <button class="btn btn-del"><a href="#">Delete</a></button>
+            <button class="btn btn-edit" onclick="loadContent('member/update/update', <?php echo htmlspecialchars($member['user_id']) ?>)" name="user_id">Edit</button>
+            <button class="btn btn-del" onclick="confirmDelete(<?php echo intval($member['user_id']); ?>)">Delete</button>
           </td>
         </tr>
       <?php endforeach; ?>

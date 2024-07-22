@@ -4,10 +4,9 @@
   border: none;
   border-radius: 8px;
   width: 16%;
-  margin-bottom: 16px;
+  cursor: pointer;
 }
-.btn a {
-  text-decoration: none;
+.btn.btn-create {
   color: #fff;
 }
 
