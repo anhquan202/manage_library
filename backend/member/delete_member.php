@@ -3,9 +3,7 @@ session_start();
 require('config.php');
 
 if ($_SERVER['REQUEST_METHOD'] === 'DELETE') {
-  parse_str(file_get_contents("php://input"), $_DELETE);
-  $user_id = isset($_DELETE['id']) ? intval($_DELETE['id']) : 0;
-
+  $user_id = isset($_GET['id']) ? intval($_GET['id']) : 0;
   if ($user_id) {
     try {
       $stmt = $conn->prepare("DELETE FROM users WHERE user_id = ?");
